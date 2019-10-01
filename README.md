@@ -37,11 +37,11 @@ Establecemos cuál es el directorio de trabajo para las operaciones subsiguiente
 
 ## Construyamos la imágen y corramos un contenedor
 
-Con el comando build construimos la imágen. El -t indica que tag le queremos poner.
+Dentro del directorio *imagen* corremos el comando de abajo para construir la imágen y el -t indica que tag le queremos poner.
 
 `docker build -t undav_app:latest .`
 
-Una vez que la imágen ya está construida, ya podemos correr un container de esa imágen.
+Una vez que la imágen ya está construida, nos vamos al directorio raíz y e instanciamos un container de esa imágen.
 
 `docker run -v $PWD:/app -p 80:80 --name undav undav_app:latest`
 
