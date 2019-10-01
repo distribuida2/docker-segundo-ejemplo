@@ -10,7 +10,7 @@ Antes que nada, veamos como quedó el archivo
     RUN chown -R www-data /app
     RUN ln -s /app /var/www/html/app
 
-    #copiamos el vhost
+    #copiamos el vhost (https://httpd.apache.org/docs/2.4/vhosts/index.html)
     COPY $PWD/example_vhost.conf /etc/apache2/sites-available/example_vhost.conf
 
     RUN a2dissite 000-default
