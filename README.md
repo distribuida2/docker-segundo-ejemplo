@@ -1,4 +1,4 @@
-## Docker - primer ejemplo
+## Docker - segundo ejemplo
 
 ### Dockerfile
 Antes que nada, veamos como quedó el archivo
