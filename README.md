@@ -41,7 +41,7 @@ Dentro del directorio *imagen* corremos el comando de abajo para construir la im
 
 `docker build -t undav_app:latest .`
 
-Una vez que la imágen ya está construida, nos vamos al directorio raíz y e instanciamos un container de esa imágen.
+Una vez que la imágen ya está construida, nos vamos al directorio raíz e instanciamos un container de esa imágen.
 
 `docker run -v $PWD:/app -p 80:80 --name undav undav_app:latest`
 
